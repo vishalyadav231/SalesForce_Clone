@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 html,body{
     height: 100%;
@@ -9,120 +10,260 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-
 }
 #navbar{
-    height: 11%;
+    height: 13%;
     width: 100%;
-    padding: 10px 30px;
-    background-color: white;
-    position: fixed;
+    background-color:white;
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-   
-}
-/* #leftlogo{
-    width: 70px;
-}
-#centre{
-    display: flex;
-    gap: 50px;
+    position: fixed;
     
 }
-#right{
-    display: flex;
-    gap: 20px;
-} */
-/* #Fakenavbar{
-    height: 10%;
-    width: 100%;
-   
-} */
-#logo{
-    width: 70px;
-    margin-left: 14px;
-    margin-right: 1%;
-}
-.nav_items{
-    margin: 28px;
+.navitems{
+    margin-left: 40px;
+    font-size: larger;
     font-family: 'Gill Sans';
-    font-weight: bold;
-    font-size: large;
-    color: rgb(2, 2, 81);
     display: flex;
     
-}
-.nav_items:hover{
-    color:rgb(118, 122, 243);
-}
-#contactDetails{
-    text-align: center;
-    margin-left: 10%;
-    font-weight: lighter;
-    color: rgb(86, 86, 125);
-    font-size: 110%;
-}
-#contactDetails u:hover{
-    color:rgb(118, 122, 243);
-}
-
-#contactDetails p{
-    color:rgb(8, 9, 36);
-}
-.icon{
-    margin-left: 8px;
-    font-size: 120%;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.icon:hover{
-    background-color: rgb(135, 199, 199);
     
+}
+.navitems:hover{
+    color: rgb(73, 182, 233);
+}
+#fakenavbar{
+    height: 13%;
+    width: 100%;
+    background-color: white;
+}
+#logo{
+    width: 70px; 
+    margin-left: 30px; 
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+#contactDtls{
+    text-align: center;
+    font-weight: 100;
+    margin-left: 140px;
+}
+#contactDtls u:hover{
+    color: darkcyan;
+}
+.icons{
+    margin-left: 8px;
+    padding: 12px;
+    font-size: larger;
+    border-radius: 45px;
+}
+.icons:hover{
+    background-color: rgb(205, 245, 245);
 }
 #login{
-    margin-left: 10px;
-    font-size: 115%;
-    border-radius: 45%;
-    padding-left: 10px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-right: 15px;
+    font-size: larger;
+    display: flex;
+    margin-left: 12px;
+    padding: 12px;
+    border-radius: 45px;
 }
 #login:hover{
-    background-color: rgb(145, 203, 203);
+    background-color: rgb(205, 245, 245);
 }
 #try{
-    margin-left: 15px;
-    background-color: rgb(9, 151, 9);
-    padding:10px 22px;
-    color: aliceblue;
-    font-size: 120%;
-    text-align: center;
-    border-radius: 4px;
+    margin-left: 18px;
+    padding: 13px 26px;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: white;
 }
-
-
 #try:hover{
-    background-color: rgb(11, 11, 71);
+    background-color:rgb(5, 53, 5) ;
 }
-
 #page1{
-    height: 100%;
+    height: 87%;
     width: 100%;
-    background-color: brown;
+    
+    background-image: url('https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2025/08/Frame-2-1-1.png?resize=2048,711');
+    object-fit: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+ 
 }
-#page2{
+#maincontent{
     height: 90%;
     width: 100%;
-    background-color: aqua;
-
+    display: flex;
+    align-items: center;
+    
 }
-/* #page3{
+#maincontent h1{
+    font-size: 3.7rem;
+    color: rgb(2, 2, 74);
+}
+#maincontent h2{
+    font-size: 3.7rem;
+    color: cornflowerblue;
+}
+#maincontent p{
+    margin-top: 10px;
+    font-size: 27px;
+    color: rgb(3, 5, 9);
+    font-weight:lighter;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#maincontent p b{
+    font-weight: 800;
+}
+#maincontent h3{
+    font-size: larger;
+    padding: 14px 28px;
+    background-color:rgb(31, 92, 205);
+    display: inline-block;
+    border-radius: 5px;
+    color: azure;   
+}
+#maincontent h3:hover{
+    background-color: rgb(19, 58, 131);
+}
+#pagecontent{
+    height: 87%;
+    width: 82%;
+    margin-left: 132px;
+    margin-top: 65px;    
+}
+
+#box1{
+    width:50%;
+    height: 100%;
+}
+
+#box2{
+    height: 100%;
+    width: 50%;
+    background-size: contain;  
+}
+#videoBox{
+    height: 62%;
+    width: 78%;
+    overflow: hidden;
+    margin-top: 140px;
+    margin-left: 18px;
+    border-radius: 15px;
+}
+#videoBox video{
     height: 100%;
     width: 100%;
-    background-color: rgb(77, 17, 208);
-} */
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+#chat{
+    margin-left: 520px;
+    padding: 14px 40px;
+    
+}
+    
+    
+#footer h3{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    margin-left: 83%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color:rgb(31, 92, 205);
+    display: inline;
+    padding: 15px 28px;
+    border-radius: 8px; 
+}
+#footer h3:hover{
+    background-color: rgb(19, 58, 131);
+}
 
+#page2{
+    height: 87%;
+    width: 100%;
+    
+}
 
+#headerpage2{
+    height: 17%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+#container{
+    height: 83%;
+    width: 100%;
+  
+    
+}    
+#box{
+    height: 80%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 115px;  
+    
+ 
+}
+.card{
+    height: 422px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+#card1 img{
+    width: 100%;
+    
+}
+#img1{
+    height: 35%;
+    width: 100%; 
+}
+#manu1{
+    height: 60%;
+    width: 80%;
+}
+#card2 img{
+    width: 100%;
+    
+}
+#img2{
+    height: 35%;
+    width: 100%;
+    
+    
+}
+
+#card3 img{
+    width: 100%;
+    
+}
+#img3{
+    height: 35%;
+    width: 100%;
+    
+    
+}
+#card4 img{
+    width: 100%;
+    
+}
+#img4{
+    height: 35%;
+    width: 100%;
+    
+    
+}
