@@ -212,7 +212,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     margin-left: 115px;  
     
  
@@ -220,50 +220,144 @@ html,body{
 .card{
     height: 422px;
     width: 280px;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
     border-radius: 10px;
     margin-top: 80px;
+    overflow: hidden;
+   /*  transform: scale(1.1); */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
-#card1 img{
+
+#card1 img , #card2 img , #card3 img , #card4 img{
     width: 100%;
     
-}
-#img1{
+} 
+#img1 , #img2 , #img3 , #img4{
     height: 35%;
     width: 100%; 
-}
-#manu1{
-    height: 60%;
-    width: 80%;
-}
-#card2 img{
-    width: 100%;
     
 }
-#img2{
-    height: 35%;
-    width: 100%;
+#img1:hover , #img2:hover , #img3:hover, #img4:hover{
+    transform: scale(1.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+#menu1 h1 , #menu2 h1 , #menu3 h1 , #menu4 h1{
+    margin-top: 40px;
+    font-family: 'Gill Sans';
+    margin-left: 35px;
+    font-size: x-large;
+    font-weight: 900;
     
+}
+#menu1 h1:hover , #menu2 h1:hover , #menu3 h1:hover , #menu4 h1:hover{
+    color: cornflowerblue;
     
 }
 
-#card3 img{
+#menu1 p , #menu2 p , #menu3 p , #menu4 p{
+    margin-top: 15px;
+    margin-left: 35px;
+    font-size: large;
+    font-weight: 300;
+}
+
+#menu1 h3 , #menu2 h3 , #menu3 h3 {
+    margin-top: 90px;
+    margin-left: 35px;
+}
+#menu1 h3:hover , #menu2 h3:hover , #menu3 h3:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+#menu1 h3 u:hover , #menu2 h3 u:hover , #menu3 h3 u:hover , #menu4 h3 u:hover{
+    text-decoration: none;
+}
+#menu4 h3{
+    margin-top: 68px;
+    margin-left: 35px;
+}
+#menu4 h3:hover{
+   color: cornflowerblue;
+}
+#page3{
+    height: 87%;
     width: 100%;
+   
+    
     
 }
-#img3{
-    height: 35%;
+#halfpage1{
+    height: 48%;
     width: 100%;
-    
+   /*  background-color: red; */
+  
     
 }
-#card4 img{
+#imgbox{
+    height: 100%;
     width: 100%;
+   
+}
+#imgbox img{
+    height: 100%;
+    width: 100%;
+}
+#view p{
+    margin-left: 45%;
+    padding: 13px 26px;
+    border-radius: 5px;
+    border: 2px solid rgb(104, 197, 255);
+    color: rgb(103, 197, 255);
+    font-size: larger;
+    display: inline;  
+    font-weight: bold;
     
 }
-#img4{
-    height: 35%;
-    width: 100%;
+#view p:hover{
+    background-color:rgb(237, 245, 248);
+    color: rgb(126, 125, 125);
+    border-color: rgb(126, 125, 125);
+}
+#halfpage2{
+    height: 52%;
+    width: 70%;
+    text-align: center;
+    margin-top: 50px;
+     
+}
+#allCont{
+    height: 90%;
+    width: 90%;
+    margin-left: 275px;
+}
+#allCont b{
+    font-size: 3.4rem;
+    color: rgb(52, 65, 88);
+    padding: 10px 39px;
+    font-family: 'Gill Sans';
+}
+
+#allCont p{
+    font-size: larger;
+    padding: 10px 130px;
+    margin-left: 25px;
+   
+}
+
+
+.bottom{
+    font-size: larger;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 20px 50px;
+    border: 2px solid red;
+    margin-left: 30px;
     
-    
+}
+
+.bottom:hover{
+    background-color: rgb(205, 245, 245);
 }
