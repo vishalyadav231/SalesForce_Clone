@@ -361,3 +361,7 @@ html,body{
 .bottom:hover{
     background-color: rgb(205, 245, 245);
 }
+button:hover{
+    color: red;
+    background-color: rgb(173, 236, 236);
+}
